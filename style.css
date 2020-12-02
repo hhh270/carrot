@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+}
+
+.game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 750px;
+    height: 450px;
+    background: url(./img/background.png) center/cover;
+    border-radius: 20px;
+}
+.game__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.game__button {
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    font-size: 30px;
+    border: 3px solid black;
+    transition: all 200ms ease-in;
+}
+.game__button:hover {
+    background-color: coral;
+    transform: scale(1.1);
+}
+
+.game__timer {
+    visibility: hidden;
+    width: 100px;
+    height: 45px;
+    background-color: white;
+    text-align: center;
+    border: 5px solid black;
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 40px;
+    border-radius: 15px;
+}
+.game__score {
+    visibility: hidden;
+    width: 50px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: darksalmon;
+    height: 50px;
+    font-size: 40px;
+    color: whitesmoke;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.game__field {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.pop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    height: 150px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+    border: 3px solid black;
+    color: white;
+    text-align: center;
+    transform: translateY(-150%);
+}
+
+.pop-up--hide {
+    display: none;
+}
+
+.pop-up__refresh {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: wheat;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: all 200ms ease-in;
+}
+
+.pop-up__message {
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.game__button:hover,
+.pop-up__refresh:hover {
+    background-color: skyblue;
+    transform: scale(1.1);
+}
